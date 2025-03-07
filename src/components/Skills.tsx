@@ -8,32 +8,28 @@ const skillCategories = [
     icon: <Code className="h-5 w-5" />,
     skills: [
       { name: "Python", level: 90 },
-      { name: "JavaScript", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "Node.js", level: 75 },
-      { name: "Go", level: 60 }
+      { name: "JavaScript", level: 75 },
+      { name: "TypeScript", level: 70 },
+      { name: "C", level: 65 },
+      { name: "Java", level: 50 }
     ]
   },
   {
     name: "Automação",
     icon: <Workflow className="h-5 w-5" />,
     skills: [
-      { name: "Zapier", level: 95 },
-      { name: "Make/Integromat", level: 90 },
-      { name: "Selenium", level: 85 },
-      { name: "Puppeteer", level: 80 },
-      { name: "UiPath", level: 70 }
+      { name: "Selenium", level: 90 },
+      { name: "PyAutoGUI", level: 87 },
+      { name: "Scrapy", level: 80 },
     ]
   },
   {
     name: "No-Code",
     icon: <Cpu className="h-5 w-5" />,
     skills: [
-      { name: "Bubble", level: 85 },
-      { name: "Webflow", level: 80 },
-      { name: "Airtable", level: 90 },
-      { name: "Notion", level: 95 },
-      { name: "Retool", level: 75 }
+      { name: "n8n", level: 80 },
+      { name: "Make/Integromat", level: 80 },
+      { name: "Notion", level: 65 },
     ]
   },
   {
@@ -41,10 +37,9 @@ const skillCategories = [
     icon: <Bot className="h-5 w-5" />,
     skills: [
       { name: "OpenAI API", level: 90 },
-      { name: "Hugging Face", level: 85 },
-      { name: "TensorFlow", level: 70 },
-      { name: "PyTorch", level: 65 },
-      { name: "LangChain", level: 85 }
+      { name: "DeepSeek API", level: 80 },
+      { name: "TensorFlow", level: 60 },
+      { name: "PyTorch", level: 55 },
     ]
   },
   {
@@ -52,10 +47,10 @@ const skillCategories = [
     icon: <Server className="h-5 w-5" />,
     skills: [
       { name: "FastAPI", level: 85 },
-      { name: "Express", level: 80 },
-      { name: "Django", level: 75 },
       { name: "Flask", level: 90 },
-      { name: "AWS Lambda", level: 70 }
+      { name: "Django", level: 75 },
+      { name: "NodeJS", level: 80 },
+      { name: "Spring", level: 60 }
     ]
   },
   {
@@ -63,10 +58,9 @@ const skillCategories = [
     icon: <Database className="h-5 w-5" />,
     skills: [
       { name: "SQL", level: 90 },
-      { name: "MongoDB", level: 85 },
+      { name: "MongoDB", level: 72 },
       { name: "Pandas", level: 85 },
-      { name: "ETL", level: 80 },
-      { name: "BigQuery", level: 70 }
+      { name: "PostgreSQL", level: 80 },
     ]
   }
 ];
