@@ -2,6 +2,7 @@
 import { Mail, Phone, MapPin, Send, ArrowRight, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -18,27 +19,45 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: "Mensagem enviada!",
-        description: "Obrigado pelo contato. Responderei em breve.",
-        variant: "default",
-      });
+    try {
+      const result = await emailjs.send(
+        serviceID,  // EmailJS service ID
+        templateID, // EmailJS template ID
+        formData,
+        publicKey   // EmailJS public key
+      );
       
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
+      if (result.text === 'OK') {
+        toast({
+          title: "Mensagem enviada!",
+          description: "Obrigado pelo contato. Responderei em breve.",
+          variant: "default",
+        });
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Erro!",
+        description: "Não foi possível enviar sua mensagem. Tente novamente mais tarde.",
+        variant: "destructive",
       });
-    }, 1500);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -74,7 +93,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm text-foreground/70">Email</h4>
-                    <p className="font-medium">contato@seudominio.com</p>
+                    <p className="font-medium">otochdev@gmail.com</p>
                   </div>
                 </div>
                 
@@ -84,7 +103,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm text-foreground/70">Telefone</h4>
-                    <p className="font-medium">+55 (11) 99999-9999</p>
+                    <p className="font-medium">+55 (27) 998046435</p>
                   </div>
                 </div>
                 
@@ -94,16 +113,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm text-foreground/70">Localização</h4>
-                    <p className="font-medium">São Paulo, Brasil</p>
+                    <p className="font-medium">Vitória - ES, Brasil</p>
                   </div>
                 </div>
               </div>
               
-              <div className="mt-8 p-6 bg-soft-purple rounded-lg">
-                <h4 className="font-bold mb-2">Horário de Atendimento</h4>
-                <p className="text-foreground/80 text-sm">Segunda a Sexta: 9h às 18h</p>
-                <p className="text-foreground/80 text-sm">Sábado: 9h às 13h</p>
-              </div>
+              
             </div>
           </div>
           
