@@ -33,11 +33,10 @@ const services = [
     icon: <Database className="h-10 w-10" />,
     title: "Automação No-Code",
     description:
-      "Crio soluções com plataformas No-Code como Zapier, Make, Bubble e Webflow para rápida implementação.",
+      "Crio soluções com plataformas No-Code como n8n e Make para rápida implementação.",
     details: [
       "Desenvolvimento rápido de aplicações",
-      "Automação via Zapier, Make (Integromat)",
-      "Desenvolvimento com Bubble e Webflow",
+      "Automação via n8n, Make (Integromat)",
       "Painéis de controle personalizados",
       "Sistemas CRM automatizados"
     ]
