@@ -1,5 +1,5 @@
 
-import { Eye, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { Eye, Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 const projects = [
@@ -43,7 +43,6 @@ const Projects = () => {
   const slideRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
   const [itemsPerView, setItemsPerView] = useState(3);
-  const maxIndex = Math.max(0, projects.length - itemsPerView);
 
   useEffect(() => {
     const checkSize = () => {
@@ -65,7 +64,7 @@ const Projects = () => {
   }, []);
 
   const nextSlide = () => {
-    if (currentIndex < maxIndex) {
+    if (currentIndex < projects.length - itemsPerView) {
       setCurrentIndex(prev => prev + 1);
     } else {
       setCurrentIndex(0); // Loop back to start
@@ -76,7 +75,7 @@ const Projects = () => {
     if (currentIndex > 0) {
       setCurrentIndex(prev => prev - 1);
     } else {
-      setCurrentIndex(maxIndex); // Loop to end
+      setCurrentIndex(projects.length - itemsPerView); // Loop to end
     }
   };
 
@@ -198,7 +197,20 @@ const Projects = () => {
           </button>
         </div>
         
-        {/* Removed pagination dots, now we use only arrow navigation */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {Array.from({ length: Math.ceil(projects.length / itemsPerView) }).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                Math.floor(currentIndex / itemsPerView) === index 
+                  ? 'w-8 bg-primary' 
+                  : 'w-2 bg-primary/30'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
         
         <div className="text-center mt-12">
           <a 
