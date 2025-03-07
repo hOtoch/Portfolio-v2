@@ -64,7 +64,7 @@ const Projects = () => {
   }, []);
 
   const nextSlide = () => {
-    if (currentIndex < projects.length - itemsPerView) {
+    if (currentIndex < projects.length - 1) {
       setCurrentIndex(prev => prev + 1);
     } else {
       setCurrentIndex(0); // Loop back to start
@@ -197,20 +197,7 @@ const Projects = () => {
           </button>
         </div>
         
-        <div className="flex justify-center mt-6 space-x-2">
-          {Array.from({ length: Math.ceil(projects.length / itemsPerView) }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                Math.floor(currentIndex / itemsPerView) === index 
-                  ? 'w-8 bg-primary' 
-                  : 'w-2 bg-primary/30'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
+        
         
         <div className="text-center mt-12">
           <a 
