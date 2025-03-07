@@ -26,7 +26,7 @@ const About = () => {
               <img
                 src="/lovable-uploads/d818ca11-cebd-464d-b148-719ba41ea53d.png"
                 alt="Hugo Otoch"
-                className="w-full h-full object-cover object-top rounded-2xl"
+                className="w-full h-full object-cover object-center rounded-2xl"
               />
             </div>
             
