@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
           <div className="md:col-span-5 space-y-5">
             <Link to="/" className="inline-block">
-              <h3 className="text-2xl font-bold text-gradient mb-2">Portfólio</h3>
+              <h3 className="text-2xl font-bold text-gradient mb-2">Otoch</h3>
             </Link>
             <p className="text-foreground/80 max-w-md">
               Transformando negócios através de automação inteligente e agentes de IA. 
@@ -19,28 +19,22 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/hOtoch"
                 className="bg-background p-2 rounded-full text-foreground/70 hover:text-primary transition-colors"
                 aria-label="Github"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/hugootoch/"
                 className="bg-background p-2 rounded-full text-foreground/70 hover:text-primary transition-colors"
                 aria-label="Linkedin"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
+            
               <a
-                href="#"
-                className="bg-background p-2 rounded-full text-foreground/70 hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/hugootoch/"
                 className="bg-background p-2 rounded-full text-foreground/70 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
@@ -124,7 +118,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center mt-4 md:mt-0">
               <span className="text-foreground/70 text-sm flex items-center">
-                Feito com <Heart className="h-4 w-4 mx-1 text-red-500" /> por Seu Nome
+                Feito com <Heart className="h-4 w-4 mx-1 text-red-500" /> por Hugo Otoch
               </span>
             </div>
           </div>
