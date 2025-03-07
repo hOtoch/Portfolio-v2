@@ -43,7 +43,7 @@ const Navbar = () => {
           className="text-xl md:text-2xl font-bold text-gradient"
           onClick={closeMenu}
         >
-          <span className="mr-1">Portfólio</span>
+          <span className="mr-1">Otoch</span>
         </Link>
 
         {/* Desktop Menu */}

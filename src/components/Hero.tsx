@@ -57,7 +57,7 @@ const Hero = () => {
                 <div className="relative w-[70%] aspect-square bg-gradient-to-br from-purple-400 to-purple-700 dark:from-purple-500 dark:to-purple-800 rounded-full shadow-xl glow after:h-full after:w-full after:top-0 after:left-0 after:rounded-full animate-pulse" style={{ animationDuration: '4s' }}>
                   <div className="absolute inset-4 bg-white dark:bg-gray-900 rounded-full flex items-center justify-center">
                     <img 
-                      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
+                      src="../../public/img/robo.jpeg" 
                       alt="AI and Automation" 
                       className="rounded-full object-cover h-full w-full"
                     />

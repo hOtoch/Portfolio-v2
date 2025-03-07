@@ -16,7 +16,7 @@ const About = () => {
             Quem sou eu e o que faço
           </h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
-            Combinando criatividade e tecnologia para criar soluções de automação e inteligência artificial que transformam negócios.
+            Combinando criatividade e tecnologia para criar soluções que transformam negócios.
           </p>
         </div>
 
@@ -24,29 +24,21 @@ const About = () => {
           <div className="relative reveal">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] glow after:w-full after:h-1/2 after:bottom-0 after:left-0">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-                alt="Desenvolvedor trabalhando"
+                src="../../public/img/otoch.jpg"
                 className="w-full h-full object-cover rounded-2xl"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 glass-morphism p-4 rounded-lg max-w-xs">
-              <div className="flex items-center gap-3">
-                <div className="bg-primary/20 p-2 rounded-full">
-                  <Code className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-medium">Programador dedicado</h4>
-                  <p className="text-sm text-foreground/70">Especialista em automação e IA</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
 
           <div className="space-y-6 reveal">
-            <h3 className="text-2xl font-bold">Profissional apaixonado por automação e desenvolvimento de soluções inteligentes</h3>
+            <h3 className="text-2xl font-bold">
+            Olá, meu nome é <b className="text-gradient">Hugo Otoch.</b> Sou um profissional freelancer apaixonado por automação e desenvolvimento de soluções inteligentes
+            </h3>
             <p className="text-foreground/80">
-              Com experiência em criar automações tanto em código quanto no-code, ajudo empresas a otimizar processos, economizar tempo e aumentar a produtividade. Especializo-me em desenvolver agentes de IA personalizados que se adaptam às necessidades específicas de cada cliente.
+              Com experiência em criar automações tanto em código quanto no-code, ajudo empresas a otimizar processos, economizar tempo e aumentar a produtividade. Especializo-me em desenvolver soluções que se adaptam às necessidades específicas de cada cliente.
             </p>
+            
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-center gap-3">
                 <div className="bg-primary/20 p-2 rounded-full">
@@ -54,7 +46,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-sm text-foreground/70">Experiência</p>
-                  <p className="font-medium">+5 anos</p>
+                  <p className="font-medium">+1 ano</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
