@@ -24,8 +24,9 @@ const About = () => {
           <div className="relative reveal">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] glow after:w-full after:h-1/2 after:bottom-0 after:left-0">
               <img
-                src="../../public/img/otoch.jpg"
+                src="../../img/otoch.jpg"
                 className="w-full h-full object-cover rounded-2xl"
+                style={{ objectPosition: '50% 30%' }}
               />
             </div>
             
