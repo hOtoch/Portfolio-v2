@@ -24,8 +24,9 @@ const About = () => {
           <div className="relative reveal">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] glow after:w-full after:h-1/2 after:bottom-0 after:left-0">
               <img
-                src="../../public/img/otoch.jpg"
-                className="w-full h-full object-cover rounded-2xl"
+                src="/lovable-uploads/d818ca11-cebd-464d-b148-719ba41ea53d.png"
+                alt="Hugo Otoch"
+                className="w-full h-full object-cover object-top rounded-2xl"
               />
             </div>
             
