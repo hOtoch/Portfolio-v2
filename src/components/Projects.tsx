@@ -4,44 +4,36 @@ import { useState, useRef, useEffect } from "react";
 
 const projects = [
   {
-    title: "Assistente IA de Atendimento",
-    category: "Agente de IA",
-    description: "Chatbot inteligente para suporte ao cliente, capaz de entender linguagem natural e resolver problemas comuns.",
-    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    link: "#",
-    tech: ["OpenAI", "Python", "React", "Node.js"]
+    title: "Dashboard Interativo Com Controle de Acesso",
+    category: "Automação de Processos",
+    description: "Projeto desenvolvido para a ROI Investimentos, com o objetivo de fornecer uma visão geral dos investimentos e controle de acesso para diferentes usuários",
+    image: "img/dashboard.png",
+    link: "https://github.com/hOtoch/Dashboard_Roi_Investimentos",
+    tech: ["Streamlit", "Pandas", "Flask", "Angular","PostgreSQL"]
   },
   {
-    title: "Automação de Processos RH",
-    category: "Automação No-Code",
-    description: "Sistema automatizado para gerenciamento de candidatos, onboarding e processos administrativos de RH.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    link: "#",
-    tech: ["Make", "Airtable", "Typeform", "Slack"]
-  },
-  {
-    title: "Sistema de Análise de Dados",
+    title: "Varredor de Vagas",
     category: "Automação com Código",
-    description: "Solução de extração, processamento e visualização automática de dados para tomada de decisões.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    link: "#",
-    tech: ["Python", "Pandas", "Tableau", "SQL"]
+    description: "Um scraper que busca vagas de emprego no site da Indeed de acordo com as palavras-chave fornecidas",
+    image: "img/vagas.png",
+    link: "https://github.com/hOtoch/varredor_de_vagas",
+    tech: ["Scraper", "Scrapy", "PySimpleGUI"]
   },
   {
-    title: "Bot de Trading Automatizado",
-    category: "IA & Automação",
-    description: "Sistema inteligente para análise de mercado e execução automática de operações baseadas em algoritmos.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    link: "#",
-    tech: ["Python", "TensorFlow", "API Trading", "AWS"]
+    title: "Bot Automatizador de Apostas",
+    category: "Automação com Código",
+    description: "Robô desenvolvido para automatizar apostas em um site de cassino de acordo com uma estratégia definida pelo cliente.",
+    image: "img/bot_aposta.PNG",
+    link: "https://github.com/hOtoch/Bot_Automatizador_de_apostas",
+    tech: ["PyAutoGUI", "Tkinter", "CxFreeze"]
   },
   {
-    title: "Dashboard de Métricas",
-    category: "Automação No-Code",
-    description: "Painel visual automatizado que consolida métricas de diferentes fontes para monitoramento em tempo real.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    link: "#",
-    tech: ["Bubble", "Google Sheets", "Zapier", "APIs"]
+    title: "Automação do Notion",
+    category: "Automação com Código",
+    description: "Sistema inteligente para verificação, classificação e notificação de leads de acordo com a data do último contato feito com eles",
+    image: "img/notion.jpg",
+    link: "https://github.com/hOtoch/Automacao-Notion",
+    tech: ["Notion API", "Slack API", "AWS", "Python"]
   },
 ];
 
