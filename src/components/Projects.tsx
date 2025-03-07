@@ -1,4 +1,5 @@
-import { Eye, Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+
+import { Eye, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 const projects = [
@@ -197,20 +198,7 @@ const Projects = () => {
           </button>
         </div>
         
-        <div className="flex justify-center mt-6 space-x-2">
-          {Array.from({ length: Math.ceil(projects.length / itemsPerView) }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index * itemsPerView)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                Math.floor(currentIndex / itemsPerView) === index 
-                  ? 'w-8 bg-primary' 
-                  : 'w-2 bg-primary/30'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
+        {/* Removed pagination dots, now we use only arrow navigation */}
         
         <div className="text-center mt-12">
           <a 
