@@ -3,6 +3,16 @@ import { Eye, Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-rea
 import { useState, useRef, useEffect } from "react";
 
 const projects = [
+
+  {
+    title: "Agente vendedor de livros (Book Keeper)",
+    category: "Agentes de IA",
+    description: "Agente de IA que simula um vendedor de livros, capaz de responder perguntas e fornecer informações sobre os livros disponíveis.",
+    image: "img/book_keeper.png",
+    link: "https://youtube.com/shorts/d0pBATeQuAE?feature=share",
+    tech: ["n8n", "OpenAI"]
+  }
+
   {
     title: "Dashboard Interativo Com Controle de Acesso",
     category: "Automação de Processos",
@@ -165,13 +175,7 @@ const Projects = () => {
                           <Eye className="mr-1 h-4 w-4" />
                           <span>Visualizar</span>
                         </a>
-                        <a 
-                          href="#" 
-                          className="inline-flex items-center text-foreground/70 hover:text-primary text-sm font-medium"
-                        >
-                          <ExternalLink className="mr-1 h-4 w-4" />
-                          <span>Detalhes</span>
-                        </a>
+                        
                       </div>
                     </div>
                   </div>
