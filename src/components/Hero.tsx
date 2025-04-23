@@ -1,4 +1,3 @@
-
 import { ArrowDown, Bot, Cpu, Zap } from "lucide-react";
 
 const Hero = () => {
