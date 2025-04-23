@@ -1,9 +1,7 @@
-
 import { Eye, Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 const projects = [
-
   {
     title: "Agente vendedor de livros (Book Keeper)",
     category: "Agentes de IA",
@@ -11,8 +9,7 @@ const projects = [
     image: "img/book_keeper.png",
     link: "https://youtube.com/shorts/d0pBATeQuAE?feature=share",
     tech: ["n8n", "OpenAI"]
-  }
-
+  },
   {
     title: "Dashboard Interativo Com Controle de Acesso",
     category: "Automação de Processos",
