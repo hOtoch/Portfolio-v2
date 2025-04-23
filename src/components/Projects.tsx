@@ -8,7 +8,7 @@ const projects = [
     title: "Agente vendedor de livros (Book Keeper)",
     category: "Agentes de IA",
     description: "Agente de IA que simula um vendedor de livros, capaz de responder perguntas e fornecer informações sobre os livros disponíveis.",
-    image: "img/book_keeper.png",
+    image: "img/book_keeper.PNG",
     link: "https://youtube.com/shorts/d0pBATeQuAE?feature=share",
     tech: ["n8n", "OpenAI"]
   }
