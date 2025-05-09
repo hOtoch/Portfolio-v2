@@ -37,7 +37,8 @@ const About = () => {
             Olá, meu nome é <b className="text-gradient">Hugo Otoch.</b> Sou um profissional freelancer apaixonado por automação e machine learning.
             </h3>
             <p className="text-foreground/80">
-              Com experiência em desenvolvimento de automações e machine learning, ajudo empresas a otimizar processos, economizar tempo e aumentar a produtividade.
+              Com experiência em desenvolvimento de automações e machine learning, ajudo empresas a otimizar processos, economizar tempo e aumentar a produtividade. Possuo um grande desejo em me especializar na área de visão computacional e IAs generativas, como as LLMs.
+              Atualmente, estou cursando Engenharia de Computação na Universidade Federal do Espírito Santo (UFES), onde adquiri conhecimentos em programação, redes de computadores, banco de dados e inteligência artificial.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
