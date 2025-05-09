@@ -1,3 +1,4 @@
+
 import { Eye, Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
@@ -106,7 +107,7 @@ const Projects = () => {
           <span className="inline-block py-1 px-3 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             Meus Projetos
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
+          <h2 className="text-3xl md:text-4xl font-bold leading-relaxed mb-8 text-gradient">
             Projetos Recentes
           </h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
