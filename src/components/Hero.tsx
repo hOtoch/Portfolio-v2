@@ -13,7 +13,7 @@ const Hero = () => {
               Especialista em Automação e IA
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight">
-              Transforme sua empresa com <span className="text-gradient">Automação</span> e <span className="text-gradient">Inteligência Artificial</span>
+              Olá, me chamo <span className="text-gradient">Hugo Otoch</span>
             </h1>
             <p className="text-base md:text-lg text-foreground/80 max-w-2xl mx-auto lg:mx-0">
               Desenvolvo soluções personalizadas que automatizam processos e implementam agentes inteligentes para otimizar operações e impulsionar resultados.

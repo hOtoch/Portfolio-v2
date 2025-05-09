@@ -34,10 +34,10 @@ const About = () => {
 
           <div className="space-y-6 reveal">
             <h3 className="text-2xl font-bold">
-            Olá, meu nome é <b className="text-gradient">Hugo Otoch.</b> Sou um profissional freelancer apaixonado por automação e desenvolvimento de soluções inteligentes
+            Olá, meu nome é <b className="text-gradient">Hugo Otoch.</b> Sou um profissional freelancer apaixonado por automação e machine learning.
             </h3>
             <p className="text-foreground/80">
-              Com experiência em criar automações tanto em código quanto no-code, ajudo empresas a otimizar processos, economizar tempo e aumentar a produtividade. Especializo-me em desenvolver soluções que se adaptam às necessidades específicas de cada cliente.
+              Com experiência em desenvolvimento de automações e machine learning, ajudo empresas a otimizar processos, economizar tempo e aumentar a produtividade.
             </p>
             
             <div className="grid grid-cols-2 gap-6">

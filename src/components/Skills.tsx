@@ -37,7 +37,9 @@ const skillCategories = [
     icon: <Bot className="h-5 w-5" />,
     skills: [
       { name: "OpenAI API", level: 90 },
-      { name: "DeepSeek API", level: 80 },
+      { name: "OpenCV", level: 80 },
+      { name: "Pillow", level: 70 },
+      { name: "Numpy", level: 70 },
       { name: "TensorFlow", level: 60 },
       { name: "PyTorch", level: 55 },
     ]
